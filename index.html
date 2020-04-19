@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset=utf-8>
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<title>Surveyform</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1 id="title">EVALUACION DE SERVICIOS</h1>
+		<p id="description">GRACIAS POR AYUDARNOS A MEJORAR</p>
+	</header>
+	<main>
+		<form id="survey-form" >
+			<label class="info">
+				<label for="name" id="name-label"> Nombre
+					<br><input id="name" type="text" name="nombre" placeholder="ingrese su nombre" required>
+				</label>
+				<br><label for="Email" id="email-label"> Email
+					<br><input id="Email" type="email" name="Email" required placeholder="ingrese su email">
+				</label>
+				<br><label for="Edad" id="number-label"> Edad
+					<br><input id="Edad" type="Number" name="Edad" min="0" max="999" placeholder="ingrese su edad" required>
+				</label>
+			</label>
+			<br><label for="dropdown"> ¿hace cuando utiliza nuestros servicio?
+				<br><select id="dropdown">
+					<option value="">Menos de 1 mes</option>
+					<option value="">1 a 3 meses</option>
+					<option value="">3 a 6 meses</option>
+					<option value="">6 meses a 1 año</option>
+					<option value="">mas de 1 año</option>
+				</select>
+			</label>
+			<br></b><label id="seletion" >Estado
+				<label>
+					<input type="radio" name="genero" value="masculino">activo
+				</label>
+				<label>
+					<input type="radio" name="genero" value="femenino">inactivo
+				</label>
+
+			</label>
+			<br><label id="seletion"> Servicio
+				<label>
+					<input type="checkbox" name="mismo" value="gato">asistente
+				</label>
+				<label>
+					<input type="checkbox" name="mismo" value="gato">opciones binarias
+				</label>
+				<label>
+					<input type="checkbox" name="mismo" value="perro">clases de trading
+				</label>
+			</label>
+			<br><label>Sugerencias
+				<textarea name="coment" id="coment" cols=" 30" rows="10" placeholder="ingrese aqui sus sugerencias"></textarea>
+			</label>
+			<input type="submit" name="send">
+		</form>
+	</main>
+</body>
+</html>
